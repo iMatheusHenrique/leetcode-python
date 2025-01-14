@@ -30,12 +30,20 @@ class Solution(object):
         :type x: int
         :rtype: bool
         """
-        sorted_number: str = ''.join(sorted(str(x)))
-        if x == sorted_number:
-            return True
-        return False
+        if x < 0:
+            return False
+        
+        original = x
+        reversed = 0
 
-x = 10
+        while x != 0:
+            reversed = reversed * 10 + x % 10
+            x = x//10
+        return original == reversed
+
+x = -101
+x = 101
+x = 121
 
 solution_obj = Solution()
 result = solution_obj.isPalindrome(x=x)
