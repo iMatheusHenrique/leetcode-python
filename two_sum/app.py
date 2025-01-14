@@ -1,4 +1,4 @@
-from typing import Dict,Union
+from typing import Dict,Union, DefaultDict
 
 class Solution(object):
     def twoSum(self, nums, target):
