@@ -171,3 +171,5 @@ cython_debug/
 .pypirc
 *.excalidraw
 *.png
+minimizeXor/
+reverseBits/
